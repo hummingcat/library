@@ -81,7 +81,7 @@ a:link, a:visited {
 a:hover, a:active {
   color: var(--Color23);
   text-decoration: none;
-  background-color: var(--Color21);
+  background-color: var(--Color24);
 }
 
 .navbar {
@@ -113,6 +113,7 @@ a:hover, a:active {
   font-weight: bold;
   font-size: var(--FontSize3);
 }
+
 
 .navbar li a:hover, a:active {
   background-color: var(--Color1);
