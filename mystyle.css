@@ -115,7 +115,7 @@ a:hover, a:active {
 }
 
 
-.navbar li a:hover, a:active {
+.navbar li a:hover, .navbar li a:active {
   background-color: var(--Color1);
   color: black;
 }
