@@ -76,12 +76,12 @@ p {
 a:link, a:visited {
   color: var(--Color2);
   text-decoration: none;
-  background-color: var(--Color21);
 }
 
 a:hover, a:active {
   color: var(--Color23);
   text-decoration: none;
+  background-color: var(--Color21);
 }
 
 .navbar {
