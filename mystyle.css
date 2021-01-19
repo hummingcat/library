@@ -79,9 +79,9 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-  color: var(--Color23);
+  color: var(--Color2);
   text-decoration: none;
-  background-color: var(--Color24);
+  background-color: var(--Color21);
 }
 
 .navbar {
