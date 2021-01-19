@@ -1,0 +1,140 @@
+:root{
+  --Color1:#EDB60F;
+  --Color2:#229DA8;
+
+  --Color11:#FCF1CE;
+  --Color12:#FAE39D;
+  --Color13:#F7D46B;
+  --Color14:#B1890B;
+  --Color15:#775B06;
+
+  --Color21:#CAF2F5;
+  --Color22:#97E4EB;
+  --Color23:#64D6E0;
+  --Color24:#1A747B;
+  --Color25:#114E53;
+
+  --ColorG1:#F2F2F2;
+  --ColorG2:#D9D9D9;
+  --ColorG3:#BFBFBF;
+  --ColorG4:#A6A6A6;
+  --ColorG5:#808080;
+  --ColorG6:#595959;
+  --ColorG7:#404040;
+  --ColorG8:#262626;
+  --ColorG9:#0D0D0D;
+
+  --FontSize1:12px;
+  --FontSize2:18px;
+  --FontSize3:24px;
+  --FontSize4:36px;
+  --FontSize5:48px;
+  --FontSize6:72px;
+}
+
+body {
+  background-color: white;
+  font-family: 'Neuton', Arial, sans-serif;
+  color: var(--ColorG7);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0px 150px;
+  padding: 14px 0px;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: var(--FontSize1);
+}
+
+h2 {
+  font-size: var(--FontSize2);
+}
+
+h3 {
+  font-size: var(--FontSize3);
+}
+
+h4 {
+  font-size: var(--FontSize4);
+}
+
+h5 {
+  font-size: var(--FontSize5);
+}
+
+h6 {
+  font-size: var(--FontSize6);
+}
+
+p {
+  font-size: var(--FontSize2);
+}
+
+
+a:link, a:visited {
+  color: var(--Color2);
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: var(--Color23);
+  text-decoration: none;
+}
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width = 100%;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--ColorG2);
+  width = 100%;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: var(--ColorG7);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: var(--FontSize3);
+}
+
+.navbar li a:hover, a:active {
+  background-color: var(--Color1);
+  color: black;
+}
+
+
+.topband h6 {
+  margin: 0;
+  color: white;
+  background-color: var(--ColorG8);  
+  font-size: var(--FontSize6);
+  font-weight: normal;
+  padding: 14px 14px;
+  text-align: center;
+}
+
+.topband p {
+  margin: 0;
+  color: white;
+  background-color: var(--ColorG8);  
+  font-size: var(--FontSize2);
+  font-weight: normal;
+  padding: 14px 14px;
+  text-align: center;
+}
