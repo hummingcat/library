@@ -182,3 +182,17 @@ a:hover, a:active {
  margin-left: auto;
  margin-right: auto;
 }
+
+.codebox {
+  /* Below are styles for the codebox (not the code itself) */
+  border:var(--ColorG5);
+  background-color:var(--Color11);
+  overflow:auto;
+}
+
+.codebox code {
+  /* Styles in here affect the text of the codebox */
+  font-size:var(--FontSize1);
+  font-family: 'Ubuntu Mono', 'Courier New', monospace;
+  color: black;
+}
