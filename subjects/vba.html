@@ -32,7 +32,7 @@ $(function(){
   <ul>
   <li><a href="#vba_colors">Colors</a></li>
     <ul>
-    <li><a href="#vba_excel_colors">Excel colors</a></li>
+    <li><a href="#vba_colors_rgb">RGB</a></li>
     </ul>
   </ul>
 </div>
@@ -42,12 +42,12 @@ $(function(){
 </div>
 
   
-<div id="vba_excel_colors">
-<h3>Excel colors</h3>
+<div id="vba_colors_rgb">
+<h3>RGB</h3>
 </div>
 
 <p>
-  Colors can be described in different formats. By default, VBA returns color in Decimal (DEC). DEC can be readily converted into Hexadecimal (HEX) or Red Green Blue (RGB). For example, the Office Blue has RGB values of (68, 114, 196). Its DEC value will be (196*256*256 + 114*256 + 68) = 12874308. Its HEX value will be 4472C4, where 44 in HEX is 196 in DEC, and so on. Other common color formats are Hue Saturation Value (HSV or HSL) and Cyan Magenta Yellow Key (CMYK), but they are less readily convertible from RGB.
+  Red Green Blue (RGB) describes a color in values of 3 primary colors. It can be expressed in a decimal (DEC) or hexadecimal (HEX) number. For example, the Office Blue has RGB values of (68, 114, 196). Its DEC value will be (196*256*256 + 114*256 + 68) = 12874308. Its HEX value will be 4472C4, where 44 in HEX is 196 in DEC, and so on. By default, VBA returns color in Decimal (DEC).
 </p>
   
 <div class = "codebox">
@@ -57,14 +57,36 @@ Myfontcolor = Range("A1").Font.Color
 Mycellcolor = Range("A1").Interior.Color
 
 'Convert color to Hexadecimal
-Mycellcolor_hex = Hex(Mycellcolor)
+Mycolor_hex = Hex(Mycolor)
 
 'Convert color to RGB
-Mycellcolor_r = Mycellcolor Mod 256
-Mycellcolor_g = (Mycellcolor / 256) Mod 256
-Mycellcolor_b = (Mycellcolor / 256 / 256) Mod 256
+Mycolor_r = Mycolor Mod 256
+Mycolor_g = (Mycolor / 256) Mod 256
+Mycolor_b = (Mycolor / 256 / 256) Mod 256
 </pre>
 </div>
 
+<hr>
+  
+<div id="vba_colors_CMYK">
+<h3>CMYK</h3>
+</div>
+
+<p>
+  Cyan Magenta Yellow Key (CMYK) describes a color in a way opposite to RGB. K is the minimum blackness of the RGB values. After adjustment for K, the complementary RGB values become CMY respectively. For example, the Office Blue has RGB values of (68, 114, 196). Its CMYK values will be (0.65, 0.42, 0, 0.23). 
+</p>
+  
+<div class = "codebox">
+<pre>  
+'Convert color from RGB to CMYK
+Mycolor_maxrgb = Max(Mycolor_r, Mycolor_g, Mycolor_b)
+Mycolor_k = 1 - Mycolor_maxrgb / 256
+Mycolor_c = 1 - Mycolor_r / Mycolor_maxrgb
+Mycolor_m = 1 - Mycolor_g / Mycolor_maxrgb
+Mycolor_y = 1 - Mycolor_b / Mycolor_maxrgb
+</pre>
+</div>
+
+ 
 </body>
 </html>
