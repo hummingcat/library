@@ -142,7 +142,6 @@ a:hover, a:active {
 }
 
 .sidebar {
-  position: fixed;
   z-index: 1; /* Stay on top stack*/
   overflow-x: hidden; /* Disable horizontal scroll */
   width:150px;
