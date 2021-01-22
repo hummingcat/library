@@ -188,6 +188,7 @@ a:hover, a:active {
   border:var(--ColorG5);
   background-color:var(--Color11);
   overflow:auto;
+  width: 50%;
 }
 
 .codebox code {
