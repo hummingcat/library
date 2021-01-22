@@ -189,6 +189,7 @@ a:hover, a:active {
   background-color:var(--Color11);
   overflow:auto;
   width: 50%;
+  border-radius: 5px;
 }
 
 .codebox pre {
