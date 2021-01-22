@@ -196,5 +196,5 @@ a:hover, a:active {
   font-size:var(--FontSize1);
   font-family: 'Ubuntu Mono', 'Courier New', monospace;
   color: black;
-  padding: 10px 0px;
+  padding: 5px;
 }
