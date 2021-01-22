@@ -46,21 +46,23 @@ $(function(){
 <h3>Excel colors</h3>
 </div>
 
+<p>
+  Colors can be described in different formats. By default, VBA returns color in Decimal (DEC). DEC can be readily converted into Hexadecimal (HEX) or Red Green Blue (RGB). For example, the Office Blue has RGB values of (68, 114, 196). Its DEC value will be (196*256*256 + 114*256 + 68) = 12874308. Its HEX value will be 4472C4, where 44 in HEX is 196 in DEC, and so on. Other common color formats are Hue Saturation Value (HSV or HSL) and Cyan Magenta Yellow Key (CMYK), but they are less readily convertible from RGB.
+</p>
+  
 <div class = "codebox">
-<pre>
-  
-  'Return font & cell color in Decimal
-  Myfontcolor = Range("A1").Font.Color
-  Mycellcolor = Range("A1").Interior.Color
-  
-  'Convert color to Hexadecimal
-  Mycellcolor_hex = Hex(Mycellcolor)
-  
-  'Convert color to RGB
-  Mycellcolor_r = Mycellcolor Mod 256
-  Mycellcolor_g = (Mycellcolor / 256) Mod 256
-  Mycellcolor_b = (Mycellcolor / 256 / 256) Mod 256
-  
+<pre>  
+'Return font & cell color in Decimal
+Myfontcolor = Range("A1").Font.Color
+Mycellcolor = Range("A1").Interior.Color
+
+'Convert color to Hexadecimal
+Mycellcolor_hex = Hex(Mycellcolor)
+
+'Convert color to RGB
+Mycellcolor_r = Mycellcolor Mod 256
+Mycellcolor_g = (Mycellcolor / 256) Mod 256
+Mycellcolor_b = (Mycellcolor / 256 / 256) Mod 256
 </pre>
 </div>
 
