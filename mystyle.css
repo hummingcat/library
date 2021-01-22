@@ -158,7 +158,7 @@ a:hover, a:active {
 
 .sidebar li a {
   display: block;
-  color: var(--ColorG5);
+  color: var(--ColorG3);
   padding: 5px;
   text-decoration: none;
   font-size: var(--FontSize1); 
@@ -189,7 +189,7 @@ a:hover, a:active {
   background-color:var(--Color11);
   overflow:auto;
   width: 50%;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .codebox pre {
