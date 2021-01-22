@@ -48,7 +48,19 @@ $(function(){
 
 <div class = "codebox">
 <code>
-  hello world!
+  
+  'Return font & cell color in Decimal
+  Myfontcolor = Range("A1").Font.Color
+  Mycellcolor = Range("A1").Interior.Color
+  
+  'Convert color to Hexadecimal
+  Mycellcolor_hex = Hex(Mycellcolor)
+  
+  'Convert color to RGB
+  Mycellcolor_r = Mycellcolor Mod 256
+  Mycellcolor_g = (Mycellcolor / 256) Mod 256
+  Mycellcolor_b = (Mycellcolor / 256 / 256) Mod 256
+  
 </code>
 </div>
 
