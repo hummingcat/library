@@ -191,7 +191,7 @@ a:hover, a:active {
   width: 50%;
 }
 
-.codebox code {
+.codebox pre {
   /* Styles in here affect the text of the codebox */
   font-size:var(--FontSize1);
   font-family: 'Ubuntu Mono', 'Courier New', monospace;
