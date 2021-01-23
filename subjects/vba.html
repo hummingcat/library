@@ -48,7 +48,7 @@ $(function(){
 </div>
 
 <p>
-  Red Green Blue (RGB) describes a color as a combination of 3 primary colors. It can be expressed in a decimal (DEC) or hexadecimal (HEX) number. For example, the Office Blue has RGB values of (68, 114, 196). Its DEC value will be (196*256*256 + 114*256 + 68) = 12874308. Its HEX value will be 4472C4, where 44 in HEX is 196 in DEC, and so on. By default, VBA returns color in DEC.
+  Red Green Blue (RGB) describes a color as a combination of 3 primary colors. It can be expressed in a decimal (DEC) or hexadecimal (HEX) number. For example, the Office Blue has RGB values of (68, 114, 196). Its DEC value is in the order of BGR, i.e. (196*256*256 + 114*256 + 68) = 12874308. Its HEX value is in the order of RGB, i.e. 4472C4, where 44 in HEX is 68 in DEC, and so on. By default, VBA returns color in DEC.
 </p>
   
 <div class = "codebox">
@@ -57,13 +57,13 @@ $(function(){
 Myfontcolor = Range("A1").Font.Color
 Mycellcolor = Range("A1").Interior.Color
 
-'Convert color from DEC to HEX
-Mycolor_hex = Hex(Mycolor)
-
 'Convert color from DEC to RGB
 Mycolor_r = Mycolor Mod 256
 Mycolor_g = (Mycolor / 256) Mod 256
 Mycolor_b = (Mycolor / 256 / 256) Mod 256
+
+'Convert color from RGB to HEX
+Mycolor_hex = Hex(Mycolor_r * 256 * 256 + Mycolor_g * 256 +  Mycolor_b)
 </pre>
 </div>
 
