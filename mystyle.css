@@ -84,6 +84,9 @@ a:hover, a:active {
   background-color: var(--Color21);
 }
 
+hr {
+  width: 50%; 
+}
 .navbar {
   position: -webkit-sticky;
   position: sticky;
@@ -198,5 +201,5 @@ a:hover, a:active {
   font-size:var(--FontSize1);
   font-family: 'Ubuntu Mono', 'Courier New', monospace;
   color: black;
-  padding: 5px;
+  padding: 0px 10px;
 }
