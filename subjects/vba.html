@@ -73,17 +73,23 @@ Mycolor_b = (Mycolor / 256 / 256) Mod 256
 </div>
 
 <p>
-  Cyan Magenta Yellow Key (CMYK) describes a color in a way opposite to RGB. K is the minimum blackness of the RGB values. After adjustment for K, the complementary RGB values become CMY respectively. For example, the Office Blue has RGB values of (68, 114, 196). Its CMYK values will be (0.65, 0.42, 0, 0.23). 
+  Opposite to RGB, Cyan Magenta Yellow Key (CMYK) describes a color by a combination of light absorption. K is the minimum blackness of the RGB values. After adjustment for K, the complementary RGB values become the respective CMY values. For example, the Office Blue has RGB values of (68, 114, 196). Its CMYK values will be (0.65, 0.42, 0, 0.23). CMYK makes more intuitive sense as it resembles the process of color paint mixing. 
 </p>
   
 <div class = "codebox">
 <pre>  
 'Convert color from RGB to CMYK
 Mycolor_maxrgb = Max(Mycolor_r, Mycolor_g, Mycolor_b)
-Mycolor_k = 1 - Mycolor_maxrgb / 256
+Mycolor_k = 1 - Mycolor_maxrgb / 255
 Mycolor_c = 1 - Mycolor_r / Mycolor_maxrgb
 Mycolor_m = 1 - Mycolor_g / Mycolor_maxrgb
 Mycolor_y = 1 - Mycolor_b / Mycolor_maxrgb
+
+'Convert color from CMYK to RGB 
+Mycolor_maxrgb = 255 * (1 - Mycolor_k)
+Mycolor_r = (1 - Mycolor_c) * Mycolor_maxrgb
+Mycolor_g = (1 - Mycolor_m) * Mycolor_maxrgb
+Mycolor_b = (1 - Mycolor_y) * Mycolor_maxrgb
 </pre>
 </div>
 
