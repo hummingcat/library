@@ -33,6 +33,7 @@ $(function(){
   <li><a href="#vba_colors">Colors</a></li>
     <ul>
     <li><a href="#vba_colors_rgb">RGB</a></li>
+    <li><a href="#vba_colors_cmyk">CMYK</a></li>
     </ul>
   </ul>
 </div>
@@ -47,19 +48,19 @@ $(function(){
 </div>
 
 <p>
-  Red Green Blue (RGB) describes a color in values of 3 primary colors. It can be expressed in a decimal (DEC) or hexadecimal (HEX) number. For example, the Office Blue has RGB values of (68, 114, 196). Its DEC value will be (196*256*256 + 114*256 + 68) = 12874308. Its HEX value will be 4472C4, where 44 in HEX is 196 in DEC, and so on. By default, VBA returns color in Decimal (DEC).
+  Red Green Blue (RGB) describes a color in values of 3 primary colors. It can be expressed in a decimal (DEC) or hexadecimal (HEX) number. For example, the Office Blue has RGB values of (68, 114, 196). Its DEC value will be (196*256*256 + 114*256 + 68) = 12874308. Its HEX value will be 4472C4, where 44 in HEX is 196 in DEC, and so on. By default, VBA returns color in decimal (DEC).
 </p>
   
 <div class = "codebox">
 <pre>  
-'Return font & cell color in Decimal
+'Return font & cell color in DEC
 Myfontcolor = Range("A1").Font.Color
 Mycellcolor = Range("A1").Interior.Color
 
-'Convert color to Hexadecimal
+'Convert color from DEC to HEX
 Mycolor_hex = Hex(Mycolor)
 
-'Convert color to RGB
+'Convert color from DEC to RGB
 Mycolor_r = Mycolor Mod 256
 Mycolor_g = (Mycolor / 256) Mod 256
 Mycolor_b = (Mycolor / 256 / 256) Mod 256
