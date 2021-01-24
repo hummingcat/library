@@ -87,6 +87,7 @@ a:hover, a:active {
 hr {
   width: 50%; 
 }
+
 .navbar {
   position: -webkit-sticky;
   position: sticky;
