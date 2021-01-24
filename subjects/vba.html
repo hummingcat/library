@@ -34,7 +34,7 @@ $(function(){
     <ul>
     <li><a href="#vba_colors_rgb">RGB</a></li>
     <li><a href="#vba_colors_cmyk">CMYK</a></li>
-    <li><a href="#vba_colors_hsl">HSL / HSV</a></li>
+    <li><a href="#vba_colors_hsv">HSV / HSL</a></li>
     </ul>
   </ul>
 </div>
@@ -130,7 +130,7 @@ Mycolor_v = Mycolor_rgbmax
 
 If Mycolor_rgbmax = 0 then
   Mycolor_sv = 0
-else
+Else
   Mycolor_sv = Mycolor_rgbdif / Mycolor_rgbmax
 End If
 
@@ -139,7 +139,7 @@ Mycolor_l = (Mycolor_rgbmax + Mycolor_rgbmin) / 2
 
 If Mycolor_rgbdif = 0 then
   Mycolor_sl = 0
-else
+Else
   Mycolor_sl = Mycolor_rgbdif / (255 - Abs(Mycolor_rgbmax + Mycolor_rgbmin - 255))
 End If
 </pre>
@@ -147,7 +147,7 @@ End If
 
   <div class="centerimage">
 
-  <img src="images/hsl.svg" alt="HSL double cone">
+  <img src="../imgaes/hsl.svg" alt="HSL double cone">
   <p> HSL </p>
   
 </div>
