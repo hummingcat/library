@@ -121,8 +121,11 @@ Mycolor_b = (1 - Mycolor_y) * Mycolor_rgbmax
 <div class = "codebox">
 <pre>
 'Convert color from RGB to HSL / HSV
-'H for both models
-'Grayscale: Set H = 0
+Mycolor_rgbmax = Max(Mycolor_r, Mycolor_g, Mycolor_b)
+Mycolor_rgbdif = Mycolor_rgbmax - Min(Mycolor_r, Mycolor_g, Mycolor_b)
+
+'H is same for both models
+'For grayscale, set H = 0
 If Mycolor_rgbdif = 0 Then
   Mycolor_h = 0
 'R dominant: Pure R at 0. Forward from 0 = more G. Backward from 360 = more B.
