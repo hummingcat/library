@@ -220,7 +220,7 @@ table {
   /* Below are styles for the newsbox (not the text itself) */
   border:var(--ColorG5);
   overflow:auto;
-  height: 400px;
+  height: 300px;
   width: 80%;
   border-radius: 0px;
  }
@@ -228,4 +228,5 @@ table {
 .newsbox h4, p {
   /* Styles in here affect the text of the newsbox */
   font-size:var(--FontSize1);
+  padding: 5px 0px;
 }
