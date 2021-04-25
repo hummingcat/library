@@ -221,7 +221,7 @@ table {
   border:var(--ColorG5);
   overflow:auto;
   height: 400px;
-  width: 100%;
+  width: 80%;
   border-radius: 0px;
   font-size:var(--FontSize1);
 }
