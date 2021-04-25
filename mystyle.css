@@ -238,6 +238,7 @@ table {
   width: 80%;
   margin: 0px 200px;
   border-radius: 0px;
+  background: var(--Color41)
  }
 
 .newsbox h4 {
