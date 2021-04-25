@@ -228,13 +228,11 @@ table {
 .newsbox h4 {
   /* Styles in here affect the text of the newsbox */
   font-size:var(--FontSize2);
-  margin: 0px;
   padding: 5px 0px;
 }
 
 .newsbox p {
   /* Styles in here affect the text of the newsbox */
   font-size:var(--FontSize1);
-  margin: 0px;
   padding: 0px 0px;
 }
