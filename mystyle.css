@@ -228,5 +228,5 @@ table {
 
 .newsbox h4, p{
   /* Below are styles for the codebox (not the code itself) */
-  font-size:var(--FontSize2);
+  font-size:var(--FontSize1);
 }
