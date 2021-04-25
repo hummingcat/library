@@ -215,3 +215,12 @@ table {
   color: black;
   padding: 0px 10px;
 }
+
+.newsbox {
+  /* Below are styles for the codebox (not the code itself) */
+  border:var(--ColorG5);
+  overflow:auto;
+  height: 400px;
+  width: 100%;
+  border-radius: 0px;
+}
