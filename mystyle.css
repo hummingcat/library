@@ -225,3 +225,8 @@ table {
   border-radius: 0px;
   font-size:var(--FontSize1);
 }
+
+.newsbox h4, p{
+  /* Below are styles for the codebox (not the code itself) */
+  font-size:var(--FontSize2);
+}
