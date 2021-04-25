@@ -217,7 +217,7 @@ table {
 }
 
 .newsbox {
-  /* Below are styles for the codebox (not the code itself) */
+  /* Below are styles for the newsbox (not the text itself) */
   border:var(--ColorG5);
   overflow:auto;
   height: 400px;
@@ -226,6 +226,6 @@ table {
  }
 
 .newsbox h4, p {
-  /* Below are styles for the codebox (not the code itself) */
+  /* Styles in here affect the text of the newsbox */
   font-size:var(--FontSize1);
 }
