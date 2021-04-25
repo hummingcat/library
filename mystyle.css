@@ -225,8 +225,14 @@ table {
   border-radius: 0px;
  }
 
-.newsbox pre {
+.feed-item-title h4 {
+  /* Styles in here affect the text of the newsbox */
+  font-size:var(--FontSize2);
+  padding: 5px 0px;
+}
+
+.feed-item-desc p {
   /* Styles in here affect the text of the newsbox */
   font-size:var(--FontSize1);
-  padding: 5px 0px;
+  padding: 0px 0px;
 }
