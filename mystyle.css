@@ -1,7 +1,9 @@
 :root{
   --Color1:#EDB60F;
   --Color2:#229DA8;
-
+  --Color3:#3568A5;
+  --Color2:#B37D55;
+  
   --Color11:#FCF1CE;
   --Color12:#FAE39D;
   --Color13:#F7D46B;
@@ -13,6 +15,18 @@
   --Color23:#64D6E0;
   --Color24:#1A747B;
   --Color25:#114E53;
+
+  --Color31:#D2E1F1;
+  --Color32:#A7C2E3;
+  --Color33:#79A3D6;
+  --Color34:#284E7B;
+  --Color35:#1B3352;
+
+  --Color41:#EFE4DD;
+  --Color42:#E0CABB;
+  --Color43:#D1B099;
+  --Color44:#895C3D;
+  --Color45:#5B3D28;
 
   --ColorG1:#F2F2F2;
   --ColorG2:#D9D9D9;
