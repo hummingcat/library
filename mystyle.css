@@ -198,12 +198,14 @@ table {
   background-color: var(--ColorG1);
 }
 
-.centerimage150px {
+.centerimage {
  text-align:center;
+ margin-left: auto;
+ margin-right: auto;
  display:block;
  }
 
-.centerimage150px img {
+.centerimage150px {
  text-align:center;
  margin-left: auto;
  margin-right: auto;
