@@ -52,7 +52,7 @@ body {
   color: var(--ColorG7);
 }
 
-h1, h2, h3, h4, h5, h6, p, table, .codebox {
+h1, h2, h3, h4, h5, h6, p, .codebox {
   margin: 0px 200px;
   padding: 10px 0px;
   font-weight: normal;
