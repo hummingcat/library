@@ -152,6 +152,10 @@ Else
   Mycolor_sv = Mycolor_rgbdif / Mycolor_rgbmax
 End If
 
+Mycolor_h = Int(Mycolor_h)
+Mycolor_sv = Int(Mycolor_sv)
+Mycolor_v = Int(Mycolor_v)
+
 'L and S for HSV
 Mycolor_l = (Mycolor_rgbmax + Mycolor_rgbmin) / 2
 
@@ -160,8 +164,49 @@ If Mycolor_rgbdif = 0 then
 Else
   Mycolor_sl = Mycolor_rgbdif / (255 - Abs(Mycolor_rgbmax + Mycolor_rgbmin - 255))
 End If
+
+Mycolor_h = Int(Mycolor_h)
+Mycolor_sl = Int(Mycolor_sl)
+Mycolor_l = Int(Mycolor_l)
 </pre>
 
+<div class = "codebox">
+<pre>
+'Convert color from HSV to RGB
+
+Mycolor_rgbmax = Mycolor_v
+Mycolor_rgbdif = Mycolor_rgbmax * Mycolor_sv
+
+If Mycolor_h < 60 Then
+  Mycolor_r = Mycolor_rgbmax
+  Mycolor_b = Mycolor_rgbmax - Mycolor_rgbdif
+  Mycolor_g = Mycolor_h * Mycolor_rgbdif / 60 + Mycolor_b
+ElseIf Mycolor_h < 120 Then
+  Mycolor_g = Mycolor_rgbmax
+  Mycolor_b = Mycolor_rgbmax - Mycolor_rgbdif
+  Mycolor_r = (120 - Mycolor_h) * Mycolor_rgbdif / 60 + Mycolor_b
+ElseIf Mycolor_h < 180 Then
+  Mycolor_g = Mycolor_rgbmax
+  Mycolor_r = Mycolor_rgbmax - Mycolor_rgbdif
+  Mycolor_b = (Mycolor_h - 120) * Mycolor_rgbdif / 60 + Mycolor_r
+ElseIf Mycolor_h < 240 Then
+  Mycolor_b = Mycolor_rgbmax
+  Mycolor_r = Mycolor_rgbmax - Mycolor_rgbdif
+  Mycolor_g = (240 - Mycolor_h) * Mycolor_rgbdif / 60 + Mycolor_r
+ElseIf Mycolor_h < 300 Then
+  Mycolor_b = Mycolor_rgbmax
+  Mycolor_g = Mycolor_rgbmax - Mycolor_rgbdif
+  Mycolor_r = (Mycolor_h - 240) * Mycolor_rgbdif / 60 + Mycolor_g
+Else
+  Mycolor_r = Mycolor_rgbmax
+  Mycolor_g = Mycolor_rgbmax - Mycolor_rgbdif
+  Mycolor_b = (360 - Mycolor_h) * Mycolor_rgbdif / 60 + Mycolor_g
+End If
+
+Mycolor_r = Int(Mycolor_r)
+Mycolor_g = Int(Mycolor_g)
+Mycolor_b = Int(Mycolor_b)
+</pre>
  
 </body>
 </html>
