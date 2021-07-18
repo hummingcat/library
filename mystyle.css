@@ -213,6 +213,10 @@ table {
  width: 150px; 
 }
 
+.centerimage150px img {
+ width: 150px; 
+}
+
 .codebox {
   /* Below are styles for the codebox (not the code itself) */
   border:var(--ColorG5);
