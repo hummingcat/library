@@ -133,6 +133,7 @@ table {
   padding: 14px 14px;
   text-decoration: none;
   font-size: var(--FontSize3);
+  vertical-align: middle;
 }
 
 
