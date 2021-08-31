@@ -148,7 +148,7 @@ table {
   color: white;
   background-color: var(--ColorG8);  
   font-size: var(--FontSize6);
-  font-weight: normal;
+  font-weight: light;
   padding: 10px;
   text-align: center;
 }
@@ -217,7 +217,7 @@ table {
 }
 
 .codebox {
-  /* Below are styles for the codebox (not the code itself) */
+  /* Styles here affect the codebox (not the code itself) */
   border:var(--ColorG5);
   background-color:var(--Color11);
   overflow:auto;
@@ -226,7 +226,7 @@ table {
 }
 
 .codebox pre {
-  /* Styles in here affect the text of the codebox */
+  /* Styles here affect the text of the codebox */
   font-size:var(--FontSize1);
   font-family: 'Roboto Mono', 'Courier New', monospace;
   color: black;
@@ -234,18 +234,18 @@ table {
 }
 
 .newsbox {
-  /* Below are styles for the newsbox (not the text itself) */
+  /* Styles here affect the newsbox (not the text itself) */
   border:var(--ColorG5);
   overflow:auto;
   height: 300px;
   width: 80%;
   margin: 0px 200px;
-  border-radius: 0px;
-  background: var(--Color41)
+  border-radius: 5px;
+  background: var(--ColorG7)
  }
 
 .newsbox h4 {
-  /* Styles in here affect the text of the newsbox */
+  /* Styles here affect the heading text of the newsbox */
   font-size:var(--FontSize2);
   padding: 5px 5px;
   margin: 0px;
@@ -256,4 +256,5 @@ table {
   font-size:var(--FontSize1);
   padding: 0px 5px;
   margin: 0px;
+  color: var(--ColorG2);
 }
