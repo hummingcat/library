@@ -145,10 +145,9 @@ table {
 
 .topband h6 {
   margin: 0;
-  color: white;
-  background-color: var(--ColorG8);  
+  color: black;
   font-size: var(--FontSize6);
-  font-weight: light;
+  font-weight: 200;
   padding: 10px;
   text-align: center;
 }
