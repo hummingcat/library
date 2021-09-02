@@ -231,7 +231,7 @@ table {
   font-size:var(--FontSize1);
   font-family: monospace;
   color: var(--ColorG2);
-  background-color: var(--ColorG7)
+  background: var(--ColorG7);
   padding: 0px 10px;
 }
 
