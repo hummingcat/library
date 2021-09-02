@@ -99,7 +99,9 @@ a:hover, a:active {
 }
 
 hr {
-  width: 50%; 
+  width: 50%;
+  border-top: 0px;
+  border-bottom: 1px solid var(--Color15);
 }
 
 table {
