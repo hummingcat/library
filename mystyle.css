@@ -218,17 +218,18 @@ table {
 .codebox {
   /* Styles here affect the codebox (not the code itself) */
   border:var(--ColorG5);
-  background-color:var(--Color11);
+  background-color:var(--Color14);
   overflow:auto;
   width: 50%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .codebox pre {
   /* Styles here affect the text of the codebox */
   font-size:var(--FontSize1);
-  font-family: 'Roboto Mono', 'Courier New', monospace;
-  color: black;
+  font-family: monospace;
+  color: var(--ColorG2);
+  background-color: var(--ColorG7)
   padding: 0px 10px;
 }
 
