@@ -218,7 +218,7 @@ table {
  width: 150px; 
 }
 
-.centerimage300px {
+.centerimage450px {
  text-align:center;
  margin-left: auto;
  margin-right: auto;
@@ -226,8 +226,8 @@ table {
  width: 100%; 
 }
 
-.centerimage300px img {
- width: 150px; 
+.centerimage450px img {
+ width: 450px; 
 }
 
 .codebox {
