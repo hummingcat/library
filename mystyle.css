@@ -147,7 +147,7 @@ table {
 
 
 .topband h6 {
-  margin: 0;
+  margin: 0px 200px;
   color: black;
   font-size: var(--FontSize6);
   font-weight: 200;
