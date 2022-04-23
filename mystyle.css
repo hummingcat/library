@@ -110,13 +110,13 @@ table {
 }
 
 .texttable table, .texttable td{
-  width: 50%;
-  margin-left: 200px;
-  border: 1px;
+  border-collapse: collapse;
+  border-style: solid;
 }
 
 .texttable table p {
   margin: 0px;
+  padding: 10px;
 }
 
 .navbar {
