@@ -109,6 +109,16 @@ table {
   margin-left: 200px;
 }
 
+.texttable table, .texttable td{
+  width: 50%;
+  margin-left: 200px;
+  border: 1px;
+}
+
+.texttable table p {
+  margin: 0px;
+}
+
 .navbar {
   position: -webkit-sticky;
   position: sticky;
